@@ -8,6 +8,9 @@ private:
 
 public:
     Point();
+    Point(int x, int y);
+    Point(const Point& other);
+    ~Point();
 
     void setX(int value);
     void setY(int value);
