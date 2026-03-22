@@ -1,23 +1,25 @@
 #include <iostream>
 #include "ColoredPoint.h"
 
+using namespace std;
+
 ColoredPoint::ColoredPoint() : Point() {
     color = "white";
-    std::cout << "ColoredPoint(): created colored point, color = " << color << std::endl;
+    cout << "ColoredPoint(): created colored point, color = " << color << endl;
 }
 
 ColoredPoint::ColoredPoint(int x, int y, const std::string& color) : Point(x, y) {
     this->color = color;
-    std::cout << "ColoredPoint(int, int, string): created colored point, color = " << this->color << std::endl;
+    cout << "ColoredPoint(int, int, string): created colored point, color = " << this->color << endl;
 }
 
 ColoredPoint::ColoredPoint(const ColoredPoint& other) : Point(other) {
     color = other.color;
-    std::cout << "ColoredPoint copy constructor: copied colored point, color = " << color << std::endl;
+    cout << "ColoredPoint copy constructor: copied colored point, color = " << color << endl;
 }
 
 ColoredPoint::~ColoredPoint() {
-    std::cout << "~ColoredPoint(): destroyed colored point, color = " << color << std::endl;
+    cout << "~ColoredPoint(): destroyed colored point, color = " << color << endl;
 }
 
 void ColoredPoint::setColor(const std::string& newColor) {
@@ -30,5 +32,5 @@ std::string ColoredPoint::getColor() const {
 
 void ColoredPoint::print() const {
     Point::print();
-    std::cout << "Color: " << color << std::endl;
+    cout << "Color: " << color << endl;
 }

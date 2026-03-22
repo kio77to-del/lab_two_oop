@@ -4,7 +4,9 @@
 #include <string>
 #include "Point.h"
 
+// Производный класс цветной точки
 class ColoredPoint : public Point {
+
 private:
     std::string color;
 

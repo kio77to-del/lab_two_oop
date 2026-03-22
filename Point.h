@@ -1,7 +1,9 @@
 #ifndef POINT_H
 #define POINT_H
 
+// Базовый класс точки
 class Point {
+
 private:
     int x;
     int y;
