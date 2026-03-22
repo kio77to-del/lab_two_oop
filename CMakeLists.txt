@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(lab_two_oop main.cpp
         Point.cpp
-        Point.h)
+        Point.h
+        ColoredPoint.cpp
+        ColoredPoint.h)
