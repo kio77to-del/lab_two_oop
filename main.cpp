@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Point.h"
 #include "ColoredPoint.h"
+#include "Line.h"
 
 int main() {
     std::cout << "=== Point objects ===" << std::endl;
@@ -32,6 +33,11 @@ int main() {
     Point* p5 = new ColoredPoint(1, 2, "blue");
     p5->print();
     delete p5;
+
+    std::cout << std::endl;
+    std::cout << "=== Composition with objects ===" << std::endl;
+    Line line(0, 0, 5, 5);
+    line.print();
 
     return 0;
 }

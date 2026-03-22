@@ -7,4 +7,6 @@ add_executable(lab_two_oop main.cpp
         Point.cpp
         Point.h
         ColoredPoint.cpp
-        ColoredPoint.h)
+        ColoredPoint.h
+        Line.cpp
+        Line.h)
